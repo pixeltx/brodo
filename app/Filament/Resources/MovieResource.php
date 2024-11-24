@@ -47,7 +47,6 @@ class MovieResource extends Resource
                 TextColumn::make('title')->sortable()->searchable(),
                 TextColumn::make('averageRating')->label('Average Rating')->sortable()->getStateUsing(fn ($record) => $record->averageRating()),
                 TextColumn::make('created_at')->date(),
-                // TextColumn::make('image_url')->label('Debug URL')->getStateUsing(fn ($record) => $record->image_url),
             ])
             ->filters([
                 //

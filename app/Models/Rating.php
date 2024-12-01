@@ -9,10 +9,15 @@ class Rating extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['movie_id', 'rating'];
+    protected $fillable = ['movie_id', 'rating', 'user_id'];
 
     public function movie()
     {
         return $this->belongsTo(Movie::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

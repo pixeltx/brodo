@@ -11,6 +11,7 @@ use Filament\Resources\Resource;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\URL;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
@@ -23,7 +24,7 @@ class MovieResource extends Resource
 {
     protected static ?string $model = Movie::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-film';
 
     public static function form(Form $form): Form
     {
@@ -36,7 +37,7 @@ class MovieResource extends Resource
                     ->label('Movie Image')
                     ->directory('movies/images') // Directory penyimpanan gambar
                     ->image()
-                    ->maxSize(5096), // Batas ukuran gambar dalam KB
+                    ->maxSize(2048), // Batas ukuran gambar dalam KB
             ]);
     }
 
@@ -44,6 +45,13 @@ class MovieResource extends Resource
     {
         return $table
             ->columns([
+                ImageColumn::make('image')
+                    ->label('Movie Image')
+                    ->getStateUsing(function ($record) {
+                        $imageUrl = URL::to(Storage::url($record->image));
+                        return $imageUrl;
+                    })
+                    ->size(100),
                 TextColumn::make('title')->sortable()->searchable(),
                 TextColumn::make('averageRating')->label('Average Rating')->sortable()->getStateUsing(fn ($record) => $record->averageRating()),
                 TextColumn::make('created_at')->date(),

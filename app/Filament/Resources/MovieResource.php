@@ -31,6 +31,7 @@ class MovieResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title')->required(),
+                TextInput::make('director'),
                 Textarea::make('description'),
                 Textarea::make('synopsis'),
                 FileUpload::make('image')

@@ -16,12 +16,30 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\UserResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\UserResource\RelationManagers;
+use Illuminate\Database\Eloquent\Model;
 
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user';
+
+    protected static array $protectedRoles = [null, 'admin'];
+
+    public static function canEdit(Model $record): bool
+    {
+        return !in_array($record->role, static::$protectedRoles);
+    }
+
+    public static function canView(Model $record): bool
+    {
+        return !in_array($record->role, static::$protectedRoles);
+    }
+
+    public static function canDelete(Model $record): bool
+    {
+        return !in_array($record->role, static::$protectedRoles);
+    }
 
     public static function form(Form $form): Form
     {
@@ -43,6 +61,7 @@ class UserResource extends Resource
                 TextColumn::make('created_at')->date(),
                 TextColumn::make('role')->sortable(),
             ])
+            ->modifyQueryUsing(fn ($query) => $query->whereNotNull('role'))
             ->filters([
                 // Add any filters here
             ])

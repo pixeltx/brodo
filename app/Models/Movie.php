@@ -10,7 +10,16 @@ class Movie extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'director', 'description', 'image', 'synopsis'];
+    protected $fillable = [
+        'title',
+        'producer',
+        'director',
+        'writer',
+        'actors',
+        'description',
+        'image',
+        'synopsis'
+    ];
 
     public function ratings()
     {
@@ -24,6 +33,6 @@ class Movie extends Model
 
     public function getImageUrlAttribute()
     {
-        return Storage::url($this->image);
+        return Storage::disk('movies')->url($this->image);
     }
 }

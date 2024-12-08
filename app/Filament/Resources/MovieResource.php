@@ -57,7 +57,10 @@ class MovieResource extends Resource
                     })
                     ->size(100),
                 TextColumn::make('title')->sortable()->searchable(),
-                TextColumn::make('averageRating')->label('Average Rating')->sortable()->getStateUsing(fn ($record) => $record->averageRating()),
+                TextColumn::make('averageRating')
+                ->label('Average Rating')
+                ->sortable()
+                ->getStateUsing(fn ($record) => $record->averageRating() !== null ? number_format($record->averageRating(), 2) : ''),
                 TextColumn::make('created_at')->date(),
             ])
             ->filters([

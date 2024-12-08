@@ -1,0 +1,418 @@
+.nav-item {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 1px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.3),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.BRO {
+    font-weight: 500;
+    padding-left: 40px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.text-uppercase {
+    font-weight: 700;
+    padding-left: 40px;
+    text-align: left;
+    color: #f6dda4;
+    font-size: 35px;
+}
+
+.ourmovies {
+    font-weight: 700;
+    text-align: center;
+    color: #f6dda4;
+    font-size: 28px;
+}
+.card {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Warna putih dengan transparansi */
+    backdrop-filter: blur(0.5px); /* Efek blur di belakang card */
+    border-radius: 10px; /* Sudut melengkung */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border dengan transparansi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan ringan */
+}
+
+.shine {
+    padding-left: 40px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.section {
+    scroll-margin-top: 70px; /* Memberikan jarak otomatis agar tidak tertutup navbar */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important; /* Transparan */
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar dengan background gelap saat scrolling */
+.navbar.scrolled {
+    background-color: #969d5f !important; /* Hitam solid */
+}
+
+.nav-link.active-section {
+    color: #ffffff !important; /* Warna putih */
+    font-weight: 700; /* Opsional: membuat tulisan lebih tebal */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.k1 {
+    padding-top: 75px;
+    padding-left: 40px;
+    text-align: left;
+    color: #79aad3;
+    font-weight: 600;
+}
+
+.wel {
+    padding-left: 40px;
+    text-align: left;
+    font-weight: 800;
+    color: #e5e5e5;
+    font-size: 45px;
+}
+
+.desc {
+    color: #e5e5e5;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+
+.desc p {
+    margin-bottom: 1rem; /* Memberi jarak antar paragraf */
+}
+
+#event {
+    background-color: #343434;
+    padding-bottom: 80px;
+}
+
+.footer {
+    background-color: #3a3f1a;
+}
+
+.footer2 {
+    background-color: #21211e;
+}
+
+.biru {
+    color: #79aad3;
+}
+
+.biru2 {
+    color: #79aad3;
+    font-weight: 800;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 1px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.3),
+        0 0 100px rgba(255, 255, 255, 0.5);
+}
+
+.kuning {
+    color: #f6dda4;
+    font-weight: 700;
+}
+
+.putih {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.timeline-item span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+.modal-isi {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.modal-content {
+    background-color: rgba(
+        111,
+        130,
+        84,
+        0.7
+    ); /* Warna putih dengan transparansi */
+    backdrop-filter: blur(6px); /* Efek blur di belakang card */
+    border-radius: 10px; /* Sudut melengkung */
+    border: 5px solid rgba(176, 179, 20, 0.5); /* Border dengan transparansi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Bayangan ringan */
+}
+
+.modal-title {
+    color: #f6dda4;
+    font-weight: 700;
+}
+
+.modal-body {
+    color: #ffffff;
+    text-align: justify;
+}
+
+.btn-outline-custom {
+    border: 2px solid #f6dda4; /* Outline warna */
+    color: #f6dda4; /* Warna teks */
+    font-weight: 600; /* Ketebalan font */
+    font-style: normal; /* Tidak italic */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow */
+    transition: all 0.3s ease; /* Animasi transisi */
+    display: inline-block;
+}
+
+.btn i {
+    margin-left: 8px; /* Menambah jarak 8px antara teks dan ikon */
+}
+
+.btn-outline-custom:hover {
+    background-color: #f6dda4;
+    color: #000;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-custom:active {
+    background-color: #f6dda4;
+    color: #000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.allmovie {
+    color: #f6dda4;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3),
+        0 0 1px rgba(255, 255, 255, 0.3), 0 0 50px rgba(255, 255, 255, 0.9),
+        0 0 100px rgba(255, 255, 255, 0.9);
+    padding: 30px;
+}
+
+.berikan {
+    color: #f6dda4;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3),
+        0 0 1px rgba(255, 255, 255, 0.3), 0 0 50px rgba(255, 255, 255, 0.9),
+        0 0 100px rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 66.6667%; /* Set to col-lg-8 width (8 out of 12 columns) */
+    margin: 0 auto; /* Center the element */
+}
+
+.rating-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px; /* Perpanjang background lebih panjang ke bawah */
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 66.6667%;
+    margin: 20px auto; /* Tambahkan margin untuk memberi jarak dengan konten lain */
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    color: #f6dda4;
+    font-size: 50px; /* Membuat ukuran bintang lebih besar */
+    cursor: pointer;
+    padding: 0 10px; /* Jarak antar bintang */
+    transition: color 0.3s ease;
+}
+
+.stars label:hover,
+.stars input[type="radio"]:checked ~ label {
+    color: #ffd700; /* Warna emas untuk bintang yang dipilih */
+}
+
+/* .custom-card {
+    width: 20rem;
+    height: 550px;
+}
+
+.custom-card2 {
+    width: 40rem;
+    height: 750px;
+} */
+
+.floating-effect {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Bergerak sedikit ke atas */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
+.floating-effect2 {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Bergerak sedikit ke atas */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
+
+#musicModal .btn {
+    margin: 10px;
+}
+
+.film-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.film-container .card {
+    flex: 0 0 auto; /* Membuat card tidak meluas */
+    width: 300px; /* Lebar card */
+    scroll-snap-align: start; /* Memastikan card terhenti dengan rapi */
+}
+
+/* Menambahkan styling untuk scroll */
+.film-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.film-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.film-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk tombol scroll */
+#scrollLeft,
+#scrollRight {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#scrollLeft:hover,
+#scrollRight:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bintang {
+    padding-top: 900px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8); /* Contoh background untuk HP */
+    }
+    .card {
+        transform: scale(0.9);
+        margin: 5px auto;
+    }
+
+    .konten-film {
+        padding: 5px;
+    }
+
+    .konten-film h4 {
+        font-size: 16px;
+    }
+
+    .konten-film p {
+        font-size: 12px;
+    }
+    .konten-film a {
+        font-size: 12px;
+    }
+
+    .card img {
+        margin-bottom: 8px;
+    }
+}

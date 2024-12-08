@@ -35,4 +35,12 @@ class Movie extends Model
     {
         return Storage::disk('movies')->url($this->image);
     }
+
+    public function showMovies()
+    {
+        $movies = Movie::all();
+        return view('event', compact('movies'));
+    }
 }
+
+

@@ -35,7 +35,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/movies/{movie}/ratings', [RatingController::class, 'store'])->name('ratings.store');
 });
 
-Route::get('/event', [EventController::class, 'showMovies'])->name('event');
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect('/login');
+})->name('logout');
+
+Route::get('/event', [EventController::class, 'index'])->name('event');
 
 Route::post('/rate-movie', [MovieRatingController::class, 'store'])->name('movies.rate');
 

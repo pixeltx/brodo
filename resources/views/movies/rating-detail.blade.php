@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-12 text-center mt-3">
-                        <a href="{{ route('movies.index') }}" class="btn btn-primary">Return to Movies</a>
+                        <a href="{{ route('movies.index') }}" class="btn btn-outline-custom">Return to Movies</a>
                     </div>
                 </div>
             </div>

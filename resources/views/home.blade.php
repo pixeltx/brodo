@@ -4,6 +4,7 @@
     <div class="container-fluid p-0">
         <!-- Hero Section -->
         <div class="hero text-center text-white d-flex align-items-center"
+<<<<<<< HEAD
             style="background-image: url('{{ asset('images/bg4.png') }}');">
             <div class="ket">
                 <p class="k1 animated" data-animation="fadeInRight" style="padding-left: 0%">#Event Broadcasting & Perfilman</p>
@@ -19,6 +20,23 @@
                 <p class="k2 animated" style="text-align: center;" data-animation="fadeInLeft">Creating
                     unforgettable moments through the film that leave a timeless impact</p>
                 <div style=" animation: bounceIn 3s ease; text-align: left;">
+=======
+            style="background-image: url('{{ asset('images/bg2.png') }}'); height: 100vh; background-size: cover;">
+            <div style="padding-top: 15vh; padding-left:20px;">
+                <p class="k1 animated" data-animation="fadeInRight">#Event Broadcasting & Perfilman</p>
+                <h1 class="wel animated" data-animation="fadeInLeft"
+                    style="text-shadow: 0 0 1px rgba(255, 255, 255, 0.1), 0 0 1px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.3), 0 0 100px rgba(255, 255, 255, 0.5); ">
+                    Welcome to
+                </h1>
+                <h1 class="wel animated" data-animation="fadeInRight"
+                    style="font-style: italic; text-shadow: 0 0 1px rgba(255, 255, 255, 0.1), 0 0 1px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.3), 0 0 100px rgba(255, 255, 255, 0.5);">
+                    Bro
+                    <span class="biru"> Do Fest</span>
+                </h1>
+                <p class="k2 animated" data-animation="fadeInLeft" style="padding-left: 40px;">Creating
+                    unforgettable moments through the film that leave a timeless impact</p>
+                <div style="text-align: left; padding-left: 40px; animation: bounceIn 3s ease;">
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
                     <a href="{{ route('event') }}" class="btn btn-primary mt-3 animated-btn oure">
                         Our Event
                     </a>
@@ -60,7 +78,11 @@
                         <img src="{{ asset('images/l4.png') }}" alt="Event 4">
                     </div>
                     <p class="title fade-in">Multifest</p>
+<<<<<<< HEAD
                     <p class="year fade-in">2022</p>
+=======
+                    <p class="year fade-in">2020</p>
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
                 </div>
                 <div class="event">
                     <div class="circle">
@@ -84,12 +106,21 @@
                     <p class="year">2024</p>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="d-flex align-items-center kotak">
                 <div class="container-content">
                     <div class="mr-4 d-flex justify-content-center">
                         <img src="{{ asset('images/q.png') }}" class="q animated" data-animation="fadeInLeft">
                     </div>
                     <div class="desc animated " data-animation="fadeInRight">
+=======
+            <div class="d-flex align-items-center" style="padding-left: 65px;">
+                <div class="container-content">
+                    <div class="mr-4">
+                        <img src="{{ asset('images/q.png') }}" class="q animated" data-animation="fadeInLeft">
+                    </div>
+                    <div class="desc animated" data-animation="fadeInRight">
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
                         <p class="k3">
                             <span class="biru2">Bro Do Fest</span> terdiri dari tiga suku kata dalam bahasa Inggris yaitu
                             <span class="biru2">"Bro"</span> yang artinya <span class="biru2">saudara</span> atau teman,

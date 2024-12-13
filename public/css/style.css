@@ -7,6 +7,7 @@
         0 0 1px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.3),
         0 0 10px rgba(255, 255, 255, 0.5);
 }
+<<<<<<< HEAD
 #filosofi {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,8 @@
 #invitation{
     padding: 150px 0;
 }
+=======
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 .el1{
     padding-left: 110px; 
     padding-top:70px;
@@ -26,6 +29,44 @@ body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* animasi konten */
+.animated {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s ease forwards;
+}
+
+/* Definisi animasi kustom */
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* animasi konten */
@@ -105,6 +146,7 @@ body {
     text-align: justify; 
     color:beige; 
     padding-top:23px; 
+<<<<<<< HEAD
     padding-bottom: 0;
     font-size:20px;
 }
@@ -113,6 +155,8 @@ body {
     color:beige; 
     padding-bottom: 0;
     padding-top:23px; 
+=======
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     font-size:20px;
 }
 .will{
@@ -139,6 +183,7 @@ body {
 
 .maskot{
     padding-left: 60px; 
+<<<<<<< HEAD
     height:90%;
 }
 
@@ -146,6 +191,15 @@ body {
     padding-top:10px; 
     padding-left:30%; 
     height:50%
+=======
+    height:45%;
+}
+
+.burung{
+    padding-top:50px; 
+    padding-left:50%; 
+    height:30%
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 }
 
 /* Timeline */
@@ -893,6 +947,7 @@ blockquote {
     border-radius: 13px;
 }
 
+<<<<<<< HEAD
 .hero-text{
     padding-top: 180px; 
     padding-left:13px;
@@ -992,13 +1047,30 @@ blockquote {
         padding-top: 0px;
         padding-left: 0px;
         text-align: center;
+=======
+
+
+
+/* Styling untuk mobile (kurang dari 768px) */
+@media (max-width: 768px) {
+    /* css home */
+    .k1 {
+        padding-top: 95px;
+        padding-left: 40px;
+        text-align: left;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         color: #79aad3;
         font-weight: 500;
         font-size: 16px;
     }
     .wel {
+<<<<<<< HEAD
         padding-left: 0px;
         text-align: center;
+=======
+        padding-left: 40px;
+        text-align: left;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         font-weight: 700;
         color: #e5e5e5;
         font-size: 35px;
@@ -1006,25 +1078,39 @@ blockquote {
     }
     .k2{
         font-size: 10px;
+<<<<<<< HEAD
         padding-left: 0px; 
         text-align: center; 
     }
     .k3{
         font-size: 15px;
         
+=======
+        padding-left: 40px; 
+        text-align: left; 
+    }
+    .k3{
+        font-size: 10px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
     .oure{
         background-color: #79AAD3; 
         font-weight: 600; 
         border-radius: 10px; 
+<<<<<<< HEAD
         padding: 8px 45px; 
         font-size:28px;
+=======
+        padding: 6px 35px; 
+        font-size:15px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     /* Timeline */
     .timeline {
         display: flex;
         align-items: center;
+<<<<<<< HEAD
         gap: 25px;
         position: relative;
         padding: 4rem;
@@ -1033,6 +1119,12 @@ blockquote {
         padding-left: 35px;
     }
     
+=======
+        gap: 5px;
+        position: relative;
+        padding: 3rem;
+    }
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     /* Event */
     .event {
         position: relative;
@@ -1043,8 +1135,13 @@ blockquote {
     }
     /* Circle */
     .circle {
+<<<<<<< HEAD
         width: 50px;
         height: 50px;
+=======
+        width: 30px;
+        height: 30px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         border-radius: 50%;
         background-color: #ffffff;
         overflow: hidden;
@@ -1082,9 +1179,15 @@ blockquote {
     .event:not(:last-child)::after {
         content: '';
         position: absolute;
+<<<<<<< HEAD
         top: 25%; /* Posisi garis di tengah lingkaran */
         right: -40px; /* Jarak ke kanan */
         width: 60px; /* Panjang garis antar circle */
+=======
+        top: 23%; /* Posisi garis di tengah lingkaran */
+        right: -40px; /* Jarak ke kanan */
+        width: 50px; /* Panjang garis antar circle */
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         height: 2px;
         background-color: white; /* Warna garis putih */
         transform: translateY(-50%);
@@ -1096,6 +1199,7 @@ blockquote {
     }
 
     .q {
+<<<<<<< HEAD
         padding-top: 30px;
         order: -1; /* Pindahkan gambar ke atas */
         width: 80%; /* Sesuaikan ukuran gambar */
@@ -1103,15 +1207,30 @@ blockquote {
         opacity: 1; /* Pastikan gambar terlihat */
         visibility: visible;
         padding-left: 0px;
+=======
+        padding-top: 20px;
+        order: -1; /* Pindahkan gambar ke atas */
+        width: 100%; /* Sesuaikan ukuran gambar */
+        height: auto;
+        opacity: 1; /* Pastikan gambar terlihat */
+        visibility: visible;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     .desc {
         order: 0; /* Teks tetap berada di bawah gambar */
+<<<<<<< HEAD
         padding: 18px;
         text-align: justify;
         opacity: 1; /* Pastikan teks terlihat */
         visibility: visible;
         margin-left: 10px;
+=======
+        padding: 20px;
+        text-align: justify;
+        opacity: 1; /* Pastikan teks terlihat */
+        visibility: visible;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
     .footer2{
         font-size: 10px;
@@ -1120,6 +1239,20 @@ blockquote {
 
     /* css event */
     /* notif musik */
+<<<<<<< HEAD
+=======
+    .modal-dialog {
+        margin: 7rem; /* Tambahkan jarak margin untuk perangkat kecil */
+        max-width: 70%; /* Sesuaikan lebar modal */
+    }
+    .modal-content {
+        font-size: 15px; /* Sesuaikan ukuran font untuk layar kecil */
+    }
+    .btn-outline-custom {
+        padding: 0.5rem 1rem; /* Sesuaikan padding tombol */
+        font-size: 14px;
+    }
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 
     /* css navbar */
 
@@ -1137,15 +1270,23 @@ blockquote {
 
     .BRO {
         font-weight: 500;
+<<<<<<< HEAD
         padding-left: 25px;
         text-align: left;
         color: #ffffff;
         font-size: 23px;
+=======
+        padding-left: 40px;
+        text-align: left;
+        color: #ffffff;
+        font-size: 30px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 
     }
     
     .text-uppercase {
         font-weight: 700;
+<<<<<<< HEAD
         padding-left: 25px;
         text-align: left;
         color: #f6dda4;
@@ -1175,16 +1316,48 @@ blockquote {
         padding-top:55px;
         text-align: center;
         text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 1px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 1);
+=======
+        padding-left: 40px;
+        text-align: left;
+        color: #f6dda4;
+        font-size: 32px;
+    }
+
+    .ning{
+        font-size: 18px;
+    }
+    
+    .mayan{
+        padding-left: 10px; 
+        padding-top: 25px; 
+        width:100%;
+        height: auto;
+    }
+
+    .tulisan{
+        font-weight: 600; 
+        font-size: 23px;
+        font-style: italic; 
+        padding-top:40px;
+        padding-left: 20px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     .tulisan2{
         text-align: justify; 
+<<<<<<< HEAD
         color:beige;
         padding:35px;
+=======
+        color:beige; 
+        padding-top:23px;
+        padding-left: 20px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         font-size:15px;
     }
 
     .will{
+<<<<<<< HEAD
         padding-top: 0px;
         font-weight: 700; 
         font-size:22px; 
@@ -1205,6 +1378,16 @@ blockquote {
     #invitation{
         padding: 60px 0;
     }
+=======
+        font-weight: 700; 
+        font-size:25px; 
+        font-style: italic; 
+        padding-left:50px; 
+        padding-top:18px; 
+        color:#ffff; 
+        text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 1px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 1);
+    }
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 
     .invi{
         text-align: justify; 
@@ -1213,6 +1396,7 @@ blockquote {
     .peta{
         border-radius: 55px; 
         cursor: pointer; 
+<<<<<<< HEAD
         width: 90%;
         height: auto;
         display: flex;
@@ -1221,6 +1405,11 @@ blockquote {
         transform: rotate(-90deg);
         padding-top: 20px;
         /* align-items: center; */
+=======
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         /* height: auto;  */
         /* box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6); */
     }
@@ -1230,6 +1419,7 @@ blockquote {
         text-align: center;
         color: #f6dda4;
         font-size: 28px;
+<<<<<<< HEAD
         padding-top: 120px;
     }
 
@@ -1243,11 +1433,25 @@ blockquote {
         padding-left:0%; 
         height:18rem;
         padding-right: 325px;
+=======
+    }
+
+    .maskot{
+        padding-left: 30px; 
+        height:25%;
+    }
+
+    .burung{
+        padding-top:50px; 
+        padding-left:50%; 
+        height:23%
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     .tulisan3{
         text-align: justify; 
         color:beige; 
+<<<<<<< HEAD
         padding-top:0px; 
         font-size:15px;
     }
@@ -1277,11 +1481,21 @@ blockquote {
         padding-left: 0%; 
         padding-top:50px;
         /* padding-bottom: 50px; */
+=======
+        padding-top:23px; 
+        font-size:15px;
+    }
+
+    .el1{
+        padding-left: 10%; 
+        padding-top:70px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     .footer{
         font-size: 14px;
     }
+<<<<<<< HEAD
     .hero-text{
         padding-left: 2px;
         /* padding-top: 0; */
@@ -1393,10 +1607,14 @@ blockquote {
         padding: 10px; 
         padding-top:0;
     }
+=======
+    
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
 }
 
 
 /* Styling untuk tablet (lebih besar dari 768px tetapi lebih kecil dari 1024px) */
+<<<<<<< HEAD
 @media (min-width: 769px) and (max-width: 1024px) {
     /* css home */
     .ket{
@@ -1409,22 +1627,40 @@ blockquote {
       }
     .k1 {
         padding-top: 35px;
+=======
+@media (max-width: 1024px) {
+    /* css home */
+    .k1 {
+        padding-top: 95px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         padding-left: 40px;
         text-align: left;
         color: #79aad3;
         font-weight: 500;
+<<<<<<< HEAD
         font-size: 21px;
+=======
+        font-size: 16px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
     .wel {
         padding-left: 40px;
         text-align: left;
         font-weight: 700;
         color: #e5e5e5;
+<<<<<<< HEAD
         font-size: 50px;
         font-style: italic;
     }
     .k2{
         font-size: 18px;
+=======
+        font-size: 35px;
+        font-style: italic;
+    }
+    .k2{
+        font-size: 10px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         padding-left: 40px; 
         text-align: left; 
     }
@@ -1436,6 +1672,7 @@ blockquote {
         font-weight: 600; 
         border-radius: 10px; 
         padding: 6px 35px; 
+<<<<<<< HEAD
         font-size:30px;
     }
 
@@ -1450,6 +1687,9 @@ blockquote {
         text-align: justify;
         opacity: 0;
         visibility: hidden;
+=======
+        font-size:15px;
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     /* Timeline */
@@ -1510,7 +1750,11 @@ blockquote {
         content: '';
         position: absolute;
         top: 23%; /* Posisi garis di tengah lingkaran */
+<<<<<<< HEAD
         right: -30px; /* Jarak ke kanan */
+=======
+        right: -40px; /* Jarak ke kanan */
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
         width: 58px; /* Panjang garis antar circle */
         height: 2px;
         background-color: white; /* Warna garis putih */
@@ -1605,7 +1849,10 @@ blockquote {
         text-align: center;
         color: #f6dda4;
         font-size: 28px;
+<<<<<<< HEAD
         padding-top: 70px;
+=======
+>>>>>>> 23e4f4722d2ca56bc326894a956df5504db500ac
     }
 
     .maskot{
